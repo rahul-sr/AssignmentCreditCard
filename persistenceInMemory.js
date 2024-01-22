@@ -12,7 +12,7 @@ class PersistenceInMemory {
   debit(key, value) {
     let { balance, maxLimit } = this.get(uid);
     let expectedCurrBalance = balance + value;
-    // validation
+    // call validation util
     if (maxLimit > expectedCurrBalance) {
       throw "Max Credit Card Limit Exceeded";
     }

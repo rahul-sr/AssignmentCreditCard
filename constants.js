@@ -1,0 +1,1 @@
+export const CARD_DEFAULT_LIMIT = 100000;
